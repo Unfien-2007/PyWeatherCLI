@@ -18,3 +18,7 @@
 - Add weather condition icons and min/max temperature overlays.
 - Add support for selecting a suggested city by number instead of typing again.
 - Add caching for recent city queries to reduce repeated API calls.
+
+## V2 progress
+
+-

@@ -1,3 +1,17 @@
+Topic Details: PyWeatherCLI
+- a python program that uses Openweather map data and diplay current weather and a 4 day hourly forcast
+
+
+
+
+
+
+
+
+
+
+
+
 # Current Progress
 
 - Uses OpenWeatherMap to gather weather forecast data.

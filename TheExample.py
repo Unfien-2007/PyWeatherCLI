@@ -1,11 +1,10 @@
 # =============================================================================
 #  PyWeatherCLI — Weather Application
 #  Powered by OpenWeatherMap API
-#  Modules: requests, json, datetime, matplotlib
+#  Modules: requests, datetime, matplotlib
 # =============================================================================
 
 import requests
-import json
 import datetime
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
@@ -61,8 +60,7 @@ class ForecastData(WeatherData):
     def __init__(self, city, country):
         # Call parent constructor with placeholder current-condition values;
         # these get filled in once we also fetch current weather.
-        super().__init__(city, country, temp=None, feels_like=None,
-                         humidity=None, description="", wind_speed=None)
+        super().__init__(city, country, temp=None, feels_like=None,humidity=None, description="", wind_speed=None)
         self.timestamps   = []   # list of datetime objects
         self.temperatures = []   # list of float temps
         self.descriptions = []   # list of condition strings
@@ -77,6 +75,7 @@ class ForecastData(WeatherData):
         """Returns the first 32 entries (4 days × 8 slots of 3 hrs each)."""
         return self.timestamps[:32], self.temperatures[:32], self.descriptions[:32]
 
+0
 
 # ==============================================================================
 #  USER-DEFINED FUNCTIONS
@@ -292,7 +291,7 @@ def main():
         choice = input("\n  Choose an option: ").strip()
 
         if choice == "0":
-            print("\n  Goodbye! Stay weather-aware. 👋\n")
+            print("\n  Goodbye! Stay weather-aware.\n")
             break
 
         elif choice == "1":

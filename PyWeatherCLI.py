@@ -1,4 +1,4 @@
-#  PyWeatherCLI — Weather Application
+#  PyWeatherCLI — City Weather Forecast Command-Line App
 #  Powered by OpenWeatherMap API
 #  Modules: requests, datetime, matplotlib
 #  Configuration: API_KEY, BASE_URL, UNITS
